@@ -6,6 +6,10 @@
 
 ---
 
+## 🌐 Live Website
+
+👉 [Visit Trav_Plan](https://travplann.netlify.app/)
+
 ## 🔍 Overview
 
 Planning a trip can be overwhelming — Trav_Plan simplifies it. Users just enter a few preferences (destination, duration, budget, travel companions), and the app curates:
