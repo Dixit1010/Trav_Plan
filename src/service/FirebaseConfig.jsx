@@ -1,46 +1,27 @@
-
-
-// import { initializeApp } from "firebase/app";
-// import {getFirestore} from "firebase/firestore"
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-
-// // Your web app's Firebase configuration
-// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-//   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-//   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-//   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-//   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-//   appId: import.meta.env.VITE_FIREBASE_APP_ID,
-//   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
-// };
-
-// // Initialize Firebase
-// export const app = initializeApp(firebaseConfig);
-// export const db  = getFirestore(app)
-
-// FirebaseConfig.jsx
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
+const apiKey = import.meta.env.VITE_FIREBASE_API_KEY;
+
+if (!apiKey) {
+  console.error(
+    '[TravPlan] Missing Firebase credentials.\n' +
+    'Create a .env.local file in the project root with your Firebase keys.\n' +
+    'See .env.example for the required variable names.'
+  );
+}
+
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  apiKey,
+  authDomain:        import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId:         import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket:     import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  appId:             import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-// ✅ app ko pehle initialize karo
 const app = initializeApp(firebaseConfig);
-
-// ✅ fir firestore & auth ko get karo
-const db = getFirestore(app);
-// const auth = getAuth(app);
-
-// ✅ export sab kuch
-export { app, db};
+export const db   = getFirestore(app);
+export const auth = apiKey ? getAuth(app) : null;
+export { app };

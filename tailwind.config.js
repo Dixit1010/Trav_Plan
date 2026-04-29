@@ -1,186 +1,3 @@
-// // /** @type {import('tailwindcss').Config} */
-// // module.exports = {
-// //   darkMode: ["class"],
-// //   content: [
-// //     './pages/**/*.{js,jsx}',
-// //     './components/**/*.{js,jsx}',
-// //     './app/**/*.{js,jsx}',
-// //     './src/**/*.{js,jsx}',
-// //   ],
-// //   prefix: "",
-// //   theme: {
-// //   	container: {
-// //   		center: 'true',
-// //   		padding: '2rem',
-// //   		screens: {
-// //   			'2xl': '1400px'
-// //   		}
-// //   	},
-// //   	extend: {
-// //   		colors: {
-// //   			border: 'hsl(var(--border))',
-// //   			input: 'hsl(var(--input))',
-// //   			ring: 'hsl(var(--ring))',
-// //   			background: 'hsl(var(--background))',
-// //   			foreground: 'hsl(var(--foreground))',
-// //   			primary: {
-// //   				DEFAULT: 'hsl(var(--primary))',
-// //   				foreground: 'hsl(var(--primary-foreground))'
-// //   			},
-// //   			secondary: {
-// //   				DEFAULT: 'hsl(var(--secondary))',
-// //   				foreground: 'hsl(var(--secondary-foreground))'
-// //   			},
-// //   			destructive: {
-// //   				DEFAULT: 'hsl(var(--destructive))',
-// //   				foreground: 'hsl(var(--destructive-foreground))'
-// //   			},
-// //   			muted: {
-// //   				DEFAULT: 'hsl(var(--muted))',
-// //   				foreground: 'hsl(var(--muted-foreground))'
-// //   			},
-// //   			accent: {
-// //   				DEFAULT: 'hsl(var(--accent))',
-// //   				foreground: 'hsl(var(--accent-foreground))'
-// //   			},
-// //   			popover: {
-// //   				DEFAULT: 'hsl(var(--popover))',
-// //   				foreground: 'hsl(var(--popover-foreground))'
-// //   			},
-// //   			card: {
-// //   				DEFAULT: 'hsl(var(--card))',
-// //   				foreground: 'hsl(var(--card-foreground))'
-// //   			}
-// //   		},
-// //   		borderRadius: {
-// //   			lg: 'var(--radius)',
-// //   			md: 'calc(var(--radius) - 2px)',
-// //   			sm: 'calc(var(--radius) - 4px)'
-// //   		},
-// //   		keyframes: {
-// //   			'accordion-down': {
-// //   				from: {
-// //   					height: '0'
-// //   				},
-// //   				to: {
-// //   					height: 'var(--radix-accordion-content-height)'
-// //   				}
-// //   			},
-// //   			'accordion-up': {
-// //   				from: {
-// //   					height: 'var(--radix-accordion-content-height)'
-// //   				},
-// //   				to: {
-// //   					height: '0'
-// //   				}
-// //   			},
-// //   			gradient: {
-// //   				to: {
-// //   					backgroundPosition: 'var(--bg-size) 0'
-// //   				}
-// //   			}
-// //   		},
-// //   		animation: {
-// //   			'accordion-down': 'accordion-down 0.2s ease-out',
-// //   			'accordion-up': 'accordion-up 0.2s ease-out',
-// //   			gradient: 'gradient 8s linear infinite'
-// //   		}
-// //   	}
-// //   },
-// //   plugins: [require("tailwindcss-animate")],
-// // }
-
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   darkMode: ["class"],
-//   content: [
-//     './pages/**/*.{js,jsx}',
-//     './components/**/*.{js,jsx}',
-//     './app/**/*.{js,jsx}',
-//     './src/**/*.{js,jsx}',
-//   ],
-//   prefix: "",
-//   theme: {
-//     container: {
-//       center: 'true',
-//       padding: '2rem',
-//       screens: {
-//         '2xl': '1400px'
-//       }
-//     },
-//     extend: {
-//       colors: {
-//         border: 'hsl(var(--border))',
-//         input: 'hsl(var(--input))',
-//         ring: 'hsl(var(--ring))',
-//         background: 'hsl(var(--background))',
-//         foreground: 'hsl(var(--foreground))',
-//         primary: {
-//           DEFAULT: 'hsl(var(--primary))',
-//           foreground: 'hsl(var(--primary-foreground))'
-//         },
-//         secondary: {
-//           DEFAULT: 'hsl(var(--secondary))',
-//           foreground: 'hsl(var(--secondary-foreground))'
-//         },
-//         destructive: {
-//           DEFAULT: 'hsl(var(--destructive))',
-//           foreground: 'hsl(var(--destructive-foreground))'
-//         },
-//         muted: {
-//           DEFAULT: 'hsl(var(--muted))',
-//           foreground: 'hsl(var(--muted-foreground))'
-//         },
-//         accent: {
-//           DEFAULT: 'hsl(var(--accent))',
-//           foreground: 'hsl(var(--accent-foreground))'
-//         },
-//         popover: {
-//           DEFAULT: 'hsl(var(--popover))',
-//           foreground: 'hsl(var(--popover-foreground))'
-//         },
-//         card: {
-//           DEFAULT: 'hsl(var(--card))',
-//           foreground: 'hsl(var(--card-foreground))'
-//         }
-//       },
-//       borderRadius: {
-//         lg: 'var(--radius)',
-//         md: 'calc(var(--radius) - 2px)',
-//         sm: 'calc(var(--radius) - 4px)'
-//       },
-//       keyframes: {
-//         'accordion-down': {
-//           from: { height: '0' },
-//           to: { height: 'var(--radix-accordion-content-height)' }
-//         },
-//         'accordion-up': {
-//           from: { height: 'var(--radix-accordion-content-height)' },
-//           to: { height: '0' }
-//         },
-//         gradient: {
-//           to: { backgroundPosition: 'var(--bg-size) 0' }
-//         },
-//         float: {
-//           '0%, 100%': { transform: 'translateY(0)' },
-//           '50%': { transform: 'translateY(-10px)' }
-//         }
-// 		marquee: {
-//           '0%': { transform: 'translateX(100%)' },
-//           '100%': { transform: 'translateX(-100%)' },
-//         }
-//       },
-//       animation: {
-//         'accordion-down': 'accordion-down 0.2s ease-out',
-//         'accordion-up': 'accordion-up 0.2s ease-out',
-//         gradient: 'gradient 8s linear infinite',
-//         float: 'float 3s ease-in-out infinite'
-//       }
-//     }
-//   },
-//   plugins: [require("tailwindcss-animate")],
-// }
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -192,83 +9,97 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px'
-      }
-    },
+    container: { center: true, padding: '2rem', screens: { '2xl': '1400px' } },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        playfair: ['"Playfair Display"', 'serif'],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
+        primary: { DEFAULT: 'hsl(var(--primary))', foreground: 'hsl(var(--primary-foreground))' },
+        secondary: { DEFAULT: 'hsl(var(--secondary))', foreground: 'hsl(var(--secondary-foreground))' },
+        destructive: { DEFAULT: 'hsl(var(--destructive))', foreground: 'hsl(var(--destructive-foreground))' },
+        muted: { DEFAULT: 'hsl(var(--muted))', foreground: 'hsl(var(--muted-foreground))' },
+        accent: { DEFAULT: 'hsl(var(--accent))', foreground: 'hsl(var(--accent-foreground))' },
+        popover: { DEFAULT: 'hsl(var(--popover))', foreground: 'hsl(var(--popover-foreground))' },
+        card: { DEFAULT: 'hsl(var(--card))', foreground: 'hsl(var(--card-foreground))' },
+        ta: {
+          green: '#00A680', 'green-dark': '#007A62', 'green-light': '#E6F7F3',
+          gold: '#F5A623', 'gold-light': '#FEF3DC',
+          text: '#1A1A1A', muted: '#717171', border: '#E0E0E0',
+          surface: '#F5F5F5', card: '#FFFFFF', badge: '#CC0000',
         },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
+        bio: {
+          deep:        '#080E1A',
+          dark:        '#0A1220',
+          surface:     '#0E1B2F',
+          green:       '#00D68F',
+          'green-mid': '#00A870',
+          amber:       '#E8B86D',
+          text:        '#F0F4F8',
+          muted:       '#8B9BB4',
+          dim:         '#4B5D7A',
         },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))'
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))'
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))'
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))'
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))'
-        }
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)'
+        lg: 'var(--radius)', md: 'calc(var(--radius) - 2px)', sm: 'calc(var(--radius) - 4px)'
+      },
+      boxShadow: {
+        card: '0 2px 8px rgba(0,0,0,0.10)',
+        'card-hover': '0 8px 24px rgba(0,0,0,0.14)',
+        search: '0 4px 20px rgba(0,0,0,0.18)',
+        glass: '0 8px 32px rgba(0,0,0,0.30)',
+        'bio-glow': '0 0 40px rgba(0,214,143,0.22)',
+        'bio-glow-lg': '0 0 80px rgba(0,214,143,0.14)',
+        'amber-glow': '0 0 40px rgba(232,184,109,0.22)',
       },
       keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' }
+        'accordion-down': { from: { height: '0' }, to: { height: 'var(--radix-accordion-content-height)' } },
+        'accordion-up': { from: { height: 'var(--radix-accordion-content-height)' }, to: { height: '0' } },
+        gradient: { to: { backgroundPosition: 'var(--bg-size) 0' } },
+        float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+        marquee: { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } },
+        shimmer: { '0%': { backgroundPosition: '-200% 0' }, '100%': { backgroundPosition: '200% 0' } },
+        blob: {
+          '0%,100%': { transform: 'translate(0,0) scale(1)' },
+          '33%': { transform: 'translate(30px,-50px) scale(1.1)' },
+          '66%': { transform: 'translate(-20px,20px) scale(0.9)' },
         },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' }
+        rainbow: { '0%': { backgroundPosition: '0%' }, '100%': { backgroundPosition: '200%' } },
+        aurora: {
+          '0%': { backgroundPosition: '0% 50%', transform: 'rotate(-5deg) scale(0.9)' },
+          '100%': { backgroundPosition: '100% 50%', transform: 'rotate(5deg) scale(1.1)' },
         },
-        gradient: {
-          to: { backgroundPosition: 'var(--bg-size) 0' }
+        breathe: {
+          '0%,100%': { transform: 'scale(1)', opacity: '0.07' },
+          '50%': { transform: 'scale(1.12)', opacity: '0.12' },
         },
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' }
+        'pulse-glow': {
+          '0%,100%': { opacity: '0.07', transform: 'scale(1)' },
+          '50%': { opacity: '0.13', transform: 'scale(1.08)' },
         },
-        marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
-        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         gradient: 'gradient 8s linear infinite',
-        float: 'float 3s ease-in-out infinite',
-        marquee: 'marquee 30s linear infinite',
-      }
-    }
+        float: 'float 4s ease-in-out infinite',
+        marquee: 'marquee 40s linear infinite',
+        shimmer: 'shimmer 2.5s linear infinite',
+        blob: 'blob 8s infinite',
+        rainbow: 'rainbow var(--speed, 2s) infinite linear',
+        aurora: 'aurora 8s ease-in-out infinite alternate',
+        breathe: 'breathe 5s ease-in-out infinite',
+        'pulse-glow': 'pulse-glow 6s ease-in-out infinite',
+        'pulse-glow-slow': 'pulse-glow 9s ease-in-out infinite',
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 }
